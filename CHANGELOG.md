@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.1.0
+- Added support for torchvision tensors
+- Implemented image rendering in the background (no more GUI freeze)
+- Optimized image rendering (2x faster)
+- Improved progress bar when loading image
+- Fixed thread context already set when saving image
+- Fixed wrong zoom factor when transposing image
+- Added support for 2024.2.x release
+
 ## 4.0.1
 - Added support for PIL, PyTorch, Tensorflow
 - Added apply colormap action
