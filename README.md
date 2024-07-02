@@ -4,43 +4,36 @@
 
 ## Description
 
-**OpenCV | NumPy | Pillow | PyTorch | TensorFlow**
+**Numpy | OpenCV | Pillow | PyTorch | TensorFlow** 
 
-
-The plugin displays an OpenCV Image (ndarray or Mat) without stopping the debugger. The Premium version also supports Pillow/PIL images, and Tensorflow and PyTorch tensors. This allows you to observe the data you are currently working on.
+The plugin displays an image without stopping the debugger. The basic (free) version allows working on OpenCV Images (ndarray or Mat). The premium version also supports Pillow/PIL images, and Tensorflow and PyTorch tensors. This will enable you to observe the data you are currently working on.
 
 There are three ways to display the image/tensor during debugging:
 - **middle-click** (middle mouse button);
 - a keyboard shortcut **Alt+I** (default keymap);
 - an action from the **context menu** of the variable.
 
-*The version 4.0.0 of the plugin has introduced numerous changes. Focused on enhancing the quality of provided solutions and expanding available functions, I've chosen to enlarge the team to make OpenCV Viewer an even more effective tool for those involved in Computer Vision. Consequently, the plugin has been available as **freemium software** since that version.*
+The Debug Image Viewer is a multifunctional tool that displays data in two modes: [**pop-up and dialog**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features). Change this option in the settings and see which mode is right for you. The plugin allows you to display the variable name, image size, color depth, and data type. In addition to displaying the image, Debug Image Viewer also allows [**inverting BGR into RGB channels**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features) and [**saving the image**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features) in PNG format. 
 
-***The basic functions are free of charge**. However, in response to your expectations, we aim to develop more advanced solutions, which will be accessible in the paid version. A monthly or annual subscription can be acquired at any time, and users are eligible for a **free trial** to acquaint themselves with the new features. The plugin is priced at 2.40 EUR (+VAT) per month, and the annual subscription offers even greater cost-effectiveness*
+Grayscale, BGR, or BGRA images are supported by default. Also, multichannel arrays can be viewed, for which [**each channel is displayed separately**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features). You can also [**apply a colormap**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features) to any single channel.
 
-*For more information and to discover which features remain in the basic version, please visit this [link](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/freemium-transition).*
-
-The OpenCV Image Viewer is a multifunctional tool that displays data in two modes: [**pop-up and dialog**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features). Change this option in the settings and see which mode is right for you. The plugin allows you to display the variable name, image size, color depth, and data type. In addition to displaying the image, OpenCV Image Viewer also allows [**inverting BGR into RGB channels**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features) and [**saving the image**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features) in PNG format. 
-
-Grayscale, BGR, or BGRA images are supported by default. Also, multichannel arrays can be viewed, for which [**each channel is displayed separately**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features). You are also able to [**apply a colormap**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features) to any single channel.
-
-One of the most important options of the plugin is [**normalization**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features). That is the procedure that modifies the pixel values' scale. The purpose of normalization is to bring an image to a range that is normal to sense. When working with data science, normalization is a very useful technique since it enables displaying matrices beyond the typical image range.
+One of the most important plugin options is [**normalization**](https://plugins.jetbrains.com/plugin/14371-opencv-image-viewer/features). That is the procedure that modifies the pixel values' scale. Normalization aims to bring an image to a range that is normal to sense. Normalization is a very useful technique when working with data science since it enables displaying matrices beyond the typical image range.
 
 The displaying behavior:
 - If the array is `uint8` or `quint8`, it is **displayed as is**;
-- If the array is `int8` or `qint8`, the pixel values are added to 128 (`[-128,127] -\> [0,255]`);
-- If the array is `uint16`, `uint32`, `uint64` or `quint16`, the pixel values are divided by 256 (`[0,65280] -\> [0,255]`);
-- If the array is `int16`, `int32`, `int64`, `qint16` or `qint32`, the pixel values are divided by 256 then added to 128 (`[-32768,32512] -\> [0,255]`);
-- If the array is `float16`, `float32`, `float64` or `bloat16`, the pixel values are multiplied by 255 (`[0,1] -\> [0,255]`);
-- If the array is `boolean`, the pixel values are multiplied by 255 (`{False,True} -\> {0,255}`).
+- If the array is `int8` or `qint8`, the pixel values are added to 128 (`[-128,127] -> [0,255]`);
+- If the array is `uint16`, `uint32`, `uint64` or `quint16`, the pixel values are divided by 256 (`[0,65280] -> [0,255]`);
+- If the array is `int16`, `int32`, `int64`, `qint16` or `qint32`, the pixel values are divided by 256 then added to 128 (`[-32768,32512] -> [0,255]`);
+- If the array is `float16`, `float32`, `float64` or `bloat16`, the pixel values are multiplied by 255 (`[0,1] -> [0,255]`);
+- If the array is `boolean`, the pixel values are multiplied by 255 (`{False,True} -> {0,255}`).
 
-To work with OpenCV Image Viewer, the image must be in **HWC** or **CHW** format when you use Python. For the C++ environment, the image must be a **contiguous** array.
+To work with Debug Image Viewer, the image must be in **HWC** or **CHW** format when you use Python. For the C++ environment, the image must be a **contiguous** array.
 
-OpenCV Image Viewer provides a simple and **user-friendly interface** for displaying images which makes work much easier. The plugin is a tool for developers and researchers working with OpenCV, Pillow/PIL, TensorFlow, or PyTorch, as it provides an efficient and intuitive way to **view and analyze image data**.
+Debug Image Viewer provides a simple and **user-friendly interface** for displaying images which makes work much easier. The plugin is a tool for developers and researchers working with OpenCV, Pillow/PIL, TensorFlow, or PyTorch, as it provides an efficient and intuitive way to **view and analyze image data**.
 
 ## Features
 
-OpenCV Image Viewer is a graphical user interface (GUI) plugin for JetBrains IDEs that allows users to easily display OpenCV and PIL images, Tensorflow and PyTorch tensors during debugging. Only OpenCV visualization is available in the free version. You can check all the features below.
+Debug Image Viewer is a graphical user interface (GUI) plugin for JetBrains IDEs that allows users to easily display OpenCV and PIL images, Tensorflow and PyTorch tensors during debugging. Only OpenCV visualization is available in the free version. You can check all the features below.
 
 ![](https://plugins.jetbrains.com/files/14371/2032-page/40b014c8-b3b2-4ae5-9703-e724aabec4ff)
 
@@ -106,7 +99,7 @@ OpenCV Image Viewer is a graphical user interface (GUI) plugin for JetBrains IDE
 
 ## Language support
 
-OpenCV Image Viewer plugin brings full support for the following languages: **Python, C++, Java/Kotlin/Android**. 
+Debug Image Viewer plugin brings full support for the following languages: **Python, C++, Java/Kotlin/Android**. 
 
 *Note it may work for other languages, but they are not officially supported or tested for now.*
 
