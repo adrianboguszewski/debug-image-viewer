@@ -31,15 +31,13 @@ To work with Debug Image Viewer, the image must be in **HWC** or **CHW** format 
 
 Debug Image Viewer provides a simple and **user-friendly interface** for displaying images which makes work much easier. The plugin is a tool for developers and researchers working with OpenCV, Pillow/PIL, TensorFlow, or PyTorch, as it provides an efficient and intuitive way to **view and analyze image data**.
 
-## Features
-
 Debug Image Viewer is a graphical user interface (GUI) plugin for JetBrains IDEs that allows users to easily display OpenCV and PIL images, Tensorflow and PyTorch tensors during debugging. Only OpenCV visualization is available in the free version. You can check all the features below.
 
-![](https://plugins.jetbrains.com/files/14371/2032-page/40b014c8-b3b2-4ae5-9703-e724aabec4ff)
+![](https://plugins.jetbrains.com/files/14371/34520-page/56a6eb0c-3cf0-47f1-b5f8-c644e92912d2)
 
 **Feature not yet available. We are working on the implementation. All available features are listed below.*
 
-### Free
+## Free
 
 - the ability to **change the window mode**: popup or dialog:
     - light popup disappears when un-clicked; 
@@ -63,15 +61,19 @@ Debug Image Viewer is a graphical user interface (GUI) plugin for JetBrains IDEs
 
 ![](https://plugins.jetbrains.com/files/14371/2032-page/209af9c3-8ac7-47b4-9cd6-856f8bbedc18)
 
-- **force “view as image”** (C++ only) for other types containing Mat e.g. std::shared_ptr<Mat>
+- **force “view as image”** (C++ only) for other types containing Mat e.g. std::shared_ptr<Mat>;
 
 ![](https://plugins.jetbrains.com/files/14371/2032-page/61a2f638-f6de-4cd2-86eb-21b650a867e4)
+
+- displaying the image **directly from the editor**;
+
+![](https://plugins.jetbrains.com/files/14371/2032-page/fb36c435-d73d-49b9-889d-03a78f539ee2)
 
 - **startup notifications**: contains info about changes in the new version.
 
 ![](https://plugins.jetbrains.com/files/14371/2032-page/7c7ab092-5656-4f74-82fe-fc77b011c302)
 
-### Premium
+## Premium
 
 - **channel inversion**: from BGR to RGB and RGB to BGR;
 
@@ -96,6 +98,14 @@ Debug Image Viewer is a graphical user interface (GUI) plugin for JetBrains IDEs
 - **displaying the pixel value in hexadecimal** under the cursor;
 
 ![](https://plugins.jetbrains.com/files/14371/2032-page/9529dc3f-1c5e-440e-a767-81d69797f22a)
+
+- support for **batch dimension BxHxWxC**;
+
+![](https://plugins.jetbrains.com/files/14371/2032-page/bf1c8685-7d40-44d2-af65-0e1d9905315d)
+
+- displaying **multiple images**.
+
+![](https://plugins.jetbrains.com/files/14371/2032-page/6af3dc8c-276f-4f05-80f7-70abac13dea0)
 
 ## Language support
 
@@ -131,7 +141,7 @@ Debug Image Viewer plugin brings full support for the following languages: **Pyt
 ![](https://plugins.jetbrains.com/files/14371/2031-page/e17359b2-8961-4279-a518-acbc3f7e8c4d)
 
 ### C++
-- variable type: Mat, Mat*, Mat**, Mat&, Mat&&, const Mat, const Mat*, const Mat&, const Mat&& [1]
+- variable type: Mat, Mat\*, Mat\*\* Mat&, Mat&&, const Mat, const Mat\*, const Mat&, const Mat&& [1]
 - data type: CV_8U, CV_16U, CV_8S, CV_16S, CV_32S, CV_32F, CV_64F
 - number of dimensions:
     - 3D: any height, any width, 1, 3, or 4 channels
