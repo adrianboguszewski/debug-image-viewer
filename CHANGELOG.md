@@ -1,5 +1,16 @@
 # Changelog
 
+## 4.2.0
+- Added possibility to show images directly from editor
+- Added support for batch dimension (premium)
+- Added multiple image displaying (premium)
+- Added support for deeper pointers in C++ (premium)
+- Settings are now stored for projects separately
+- Enabled keras variables (premium)
+- Fixed remote debugger image showing
+- Added icon to plugin actions
+- Added support for 2024.3.x release
+
 ## 4.1.0
 - Added support for torchvision tensors
 - Implemented image rendering in the background (no more GUI freeze)
