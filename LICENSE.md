@@ -1,7 +1,7 @@
-*Effective Date: 29th January 2024*
+*Effective Date: 1st July 2024*
 
-### End-User License Agreement (EULA) of OpenCV Image Viewer
-This Standard EULA is concluded between You and the Vendor with respect to the OpenCV Image Viewer Plugin (the Plugin).
+### End-User License Agreement (EULA) of Debug Image Viewer (former OpenCV Image Viewer)
+This Standard EULA is concluded between You and the Vendor with respect to the Debug Image Viewer Plugin (the Plugin).
 
 1\. Definitions
 
