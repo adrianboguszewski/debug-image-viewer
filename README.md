@@ -120,35 +120,37 @@ Debug Image Viewer plugin brings full support for the following languages: **Pyt
     - 1D: any
     - 2D: any
     - 3D: any*
-    - 4D and more*: any if first dimensions are ones (e.g. 1x1x100x100x3) 
+    - 4D: any*
+    - 5D and more*: any if first dimensions are ones (e.g. 1x1x2x100x100x3) 
 
 **Premium version only*
 
 * debug mode 
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/bc6df863-8c3b-4108-8cb8-32f73678dfaa)
+![](https://plugins.jetbrains.com/files/14371/2032-page/28cf7e4e-d63f-4970-8211-f9d400f1da9c)
 
 * console mode
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/5c68f436-30a5-47af-83b5-41712988471d)
+![](https://plugins.jetbrains.com/files/14371/2032-page/c7e62c2d-7195-45b7-aabf-93808bff3bf5)
 
 *  jupyter notebook mode
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/3e1ee3a9-4f59-4478-a78a-1c71cc3c85eb)
+![](https://plugins.jetbrains.com/files/14371/2032-page/ab25b441-a67a-4964-8bae-b99886b941ff)
 
 * remote interpreter
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/e17359b2-8961-4279-a518-acbc3f7e8c4d)
+![](https://plugins.jetbrains.com/files/14371/2032-page/e1ead006-88ca-450e-a988-1e0174b38a45)
 
 ### C++
 - variable type: Mat, Mat\*, Mat\*\* Mat&, Mat&&, const Mat, const Mat\*, const Mat&, const Mat&& [1]
 - data type: CV_8U, CV_16U, CV_8S, CV_16S, CV_32S, CV_32F, CV_64F
 - number of dimensions:
     - 3D: any height, any width, 1, 3, or 4 channels
+    - 4D: any batch, any height, any width, 1, 3, or 4 channels
 
 *[1] Force View As Image for other types containing Mat available*
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/3cb11b81-0bc9-4b61-9d97-b1aa2ae550ce)
+![](https://plugins.jetbrains.com/files/14371/2032-page/e9a99b9b-df5d-4fc0-b5ae-e124b517a726)
 
 ### Java/Kotlin
 - variable type: Mat
@@ -156,8 +158,9 @@ Debug Image Viewer plugin brings full support for the following languages: **Pyt
 - number of dimensions:
     - 2D: any
     - 3D: any height, any width, 1, 3, or 4 channels
+    - 4D: any batch, any height, any width, 1, 3, or 4 channels
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/3893046f-caf8-446f-899d-f505e6d98635)
+![](https://plugins.jetbrains.com/files/14371/2032-page/0ee50533-3cdc-4e27-8b82-a3e344d3626d)
 
 ### Android
 - variable type: Mat
@@ -165,11 +168,12 @@ Debug Image Viewer plugin brings full support for the following languages: **Pyt
 - number of dimensions:
     - 2D: any
     - 3D: any height, any width, 1, 3, or 4 channels
+    - 4D: any batch, any height, any width, 1, 3, or 4 channels
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/5496a05c-1e8e-445a-859b-9df0b9f55ac0)
+![](https://plugins.jetbrains.com/files/14371/2032-page/d446799b-5116-49f2-8c96-2e52366bec17)
 
 ### Summary
 
-![](https://plugins.jetbrains.com/files/14371/2031-page/a9acab55-bc9c-41a2-a286-4145420c690d)
+![](https://plugins.jetbrains.com/files/14371/2032-page/a97c982d-5772-481e-b8ef-297faa844c61)
 
 *[1] Force View As Image for other types containing Mat available*
