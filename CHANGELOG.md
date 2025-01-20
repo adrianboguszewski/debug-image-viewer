@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.2.2
+- Fixed slow image loading with a remote interpreter
+
+## 4.2.1
+- Fixed issue with showing mat as function parameter in C++
+
 ## 4.2.0
 - Added possibility to show images directly from editor
 - Added support for batch dimension (premium)
