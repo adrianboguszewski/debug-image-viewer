@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.3.0
+
+- Added support for tool window 
+- Added different showing strategies in a tool window (premium)
+- Added possibility to change toolbar orientation
+
 ## 4.2.2
 - Fixed slow image loading with a remote interpreter
 
