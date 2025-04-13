@@ -2,7 +2,7 @@
 
 ## 4.3.1
 - Added support for 2025.1.x release
-- 
+
 ## 4.3.0
 - Added support for tool window 
 - Added different showing strategies in a tool window (premium)
