@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.3.2
+- Removed anonymous usage statistics
+
 ## 4.3.1
 - Added support for 2025.1.x release
 
